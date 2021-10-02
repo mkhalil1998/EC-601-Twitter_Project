@@ -24,5 +24,15 @@ Testing: The code was tested with extracting the 10 most recent twitter posts fr
 Phase 2: Product Mission
 --------
 
-User Story:
-A sales manager wants to understand if the customers are enjoying the product so that he or she can pin point improvements for their next release. The manager does not want to rely only on amazon/google reviews but also wants to analyze tweets. 
+Target Customer:
+A sales manager wants to understand if the customers are enjoying the product so that he or she can pin point improvements for their next release. The manager does not want to rely only on amazon/google reviews but also wants to analyze tweets. By looking at tweets about the product, and focus mainly on the ones that are tagged as negative by the sentiment analysis API. 
+
+MVP: 
+The product should be able to provide the user with the following once a query from the user (Name, Number of Tweets) is inputted: 
+ - Tweet
+ - Sentiment Analysis of Tweets
+
+In addition to this main two requirements, I believe that information such as date and location can provide also important insights to the user, these can be added to the both the query as well as outputs. 
+
+User Story: 
+After analyzing the tweets for the month, a user notices that the there are more negative tweets than usual for a particular week, he or she are than able to read the tweets and understand them more and then try to pin point what went wrong on the their end of such customer disatisfaction. 
