@@ -35,4 +35,4 @@ The product should be able to provide the user with the following once a query f
 In addition to this main two requirements, I believe that information such as date and location can provide also important insights to the user, these can be added to the both the query as well as outputs. 
 
 ### User Story: 
-After analyzing the tweets for the month, a user notices that the there are more negative tweets than usual for a particular week, he or she are than able to read the tweets and understand them more and then try to pin point what went wrong on the their end of such customer disatisfaction. 
+After analyzing the tweets for the month, a user notices that the there are more negative tweets than usual for a particular week, he or she are than able to read the tweets and understand them more and then try to pin point what went wrong on the their end for such customer disatisfaction to occur. 
