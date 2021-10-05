@@ -16,7 +16,7 @@ TwitterProject-Phase1b.py allows the user to use the extracted text from twitter
  
  - 0.65 - 1 -> Very Positive 
  - 0.65 - 0.35 -> Positive 
- - 0.35 - -0.35 -> OK 
+ - 0.35 - -0.35 -> Neutral 
  - -0.35 - -1 -> Negative 
  
 Testing: The code was tested with extracting the 10 most recent twitter posts from the White House and each post was given a sentiment level. 
