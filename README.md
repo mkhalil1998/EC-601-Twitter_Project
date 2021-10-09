@@ -37,7 +37,7 @@ In addition to this main two requirements, I believe that information such as da
 
 ### Modules: 
 
-1- twitter_api_module.py: 
+**1- twitter_api_module.py:**
 This modules has two primrary functions. It extracts the tweets related to the specified product and number of tweets. It also cleans/preprocesses the data to prepare it for sentiment analysis.
 
 Steps done to clean the tweets are as follows: 
@@ -48,3 +48,8 @@ Steps done to clean the tweets are as follows:
  
 An example of the output of this module is as follows: 
 ![alt text](https://github.com/mkhalil1998/EC-601-Twitter_Project/blob/main/Images/module1.png)
+
+**2- google_api_module.py:**
+This modules performs sentiment analysis on the tweets and according to the outputed score a sentiment level is provided for the tweet. It can be positive, neutral or negative. 
+
+
