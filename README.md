@@ -46,10 +46,11 @@ Steps done to clean the tweets are as follows:
  - Remove user @ references and '#' from tweet
  - Remove punctuations
  
-An example of the output of this module is as follows: 
+An example of the output of this module is as follows for the product airpods: 
 ![alt text](https://github.com/mkhalil1998/EC-601-Twitter_Project/blob/main/Images/module1.png)
 
 **2- google_api_module.py:**
 This modules performs sentiment analysis on the tweets and according to the outputed score a sentiment level is provided for the tweet. It can be positive, neutral or negative. 
 
-
+An example of the output of this module is as follows for the product airpods: 
+![alt text](https://github.com/mkhalil1998/EC-601-Twitter_Project/blob/main/Images/module2.png)
