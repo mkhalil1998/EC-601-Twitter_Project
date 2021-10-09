@@ -37,6 +37,8 @@ In addition to this main two requirements, I believe that information such as da
 
 ### Modules: 
 
+The goal of the project is to provide the user the flexibility of analyzing tweets for a particular product through a general lense or a more detailed view, depending on the needs. The user can use the visualizations to get an idea of the sentiment distribution but can also dig deeper and look at the sentiment of particular tweets
+
 **1- twitter_api_module.py:**
 This modules has two primrary functions. It extracts the tweets related to the specified product and number of tweets. It also cleans/preprocesses the data to prepare it for sentiment analysis.
 
