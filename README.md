@@ -45,4 +45,4 @@ Steps done to clean the tweets are as follows:
  - Remove user @ references and '#' from tweet
  - Remove punctuations
 An example of the output of this module is as follows: 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/mkhalil1998/EC-601-Twitter_Project/blob/main/Images/module1.png)
