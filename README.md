@@ -31,6 +31,18 @@ As a customer, I am interested in buying a product and want to get an idea on wh
 ### MVP: 
 The product should be able to provide the user with the following:  
  - Tweets about specified product
- - Sentiment Analysis of for generated tweets 
+ - Sentiment Analysis for generated tweets 
 
 In addition to this main two requirements, I believe that information such as date and location can provide also important insights to the user, these can be added to the both the query as well as outputs. 
+
+### Modules: 
+
+1- twitter_api_module.py: 
+This modules has two primrary functions. It extracts the tweets related to the specified product and number of tweets. It also cleans/preprocesses the data to prepare it for sentiment analysis.
+Steps done to clean the tweets are as follows: 
+ - Converting all letters to either upper case or lower case.
+ - Stopword removal: Some words do not contribute much to the machine learning model, so it's good to remove them. A list of stopwords can be defined by the nltk library, or it can be business-specific.
+ - Remove user @ references and '#' from tweet
+ - Remove punctuations
+An example of the output of this module is as follows: 
+![alt text](http://url/to/img.png)
