@@ -54,3 +54,10 @@ This modules performs sentiment analysis on the tweets and according to the outp
 
 An example of the output of this module is as follows for the product airpods: 
 ![alt text](https://github.com/mkhalil1998/EC-601-Twitter_Project/blob/main/Images/module2.png)
+
+
+**3- visualization_module.py:**
+This model combines the results of the two previous models and tries to visualize the data. There are two types of visualizations. A pie chart showing the percentage of tweets per sentiment level, and a word cloud showing the most frequent words in the tweets. This is can provide insights on some key words. 
+
+Pie chart: 
+![alt text](https://github.com/mkhalil1998/EC-601-Twitter_Project/blob/main/Images/piechart.png)
