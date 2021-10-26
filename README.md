@@ -75,3 +75,19 @@ Word Cloud:
 
 
 ## Project 3:
+
+**Google_NLP.py **
+ 
+This is for defining a function to initalize google api, input document, 
+and provide sentiment score for given text.
+
+**test_Google_NLP.py **
+
+I export the google api code and write a 
+unit test to experiment with different inputs
+
+To run this python file: 
+Type the sample text you want to text, change the assert function to the expected output 
+and then run the test_Google_NLP.py file. 
+
+
