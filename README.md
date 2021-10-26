@@ -76,12 +76,12 @@ Word Cloud:
 
 ## Project 3:
 
-**Google_NLP.py**
+**1 - (A) Google_NLP.py**
  
 This is for defining a function to initalize google api, input document, 
 and provide sentiment score for given text.
 
-**test_Google_NLP.py**
+**1 - (B) test_Google_NLP.py**
 
 I export the google api code and write a 
 unit test to experiment with different inputs
