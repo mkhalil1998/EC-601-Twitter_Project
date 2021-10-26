@@ -1,5 +1,8 @@
 # EC-601-Twitter_Project
 
+## Project 2:
+
+
 Phase 1 a: Exploring the twitter API
 --------
 
@@ -69,3 +72,6 @@ Pie chart:
 
 Word Cloud: 
 ![alt text](https://github.com/mkhalil1998/EC-601-Twitter_Project/blob/main/Images/word_cloud.png)
+
+
+### Project 3:
