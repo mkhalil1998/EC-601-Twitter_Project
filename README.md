@@ -74,4 +74,4 @@ Word Cloud:
 ![alt text](https://github.com/mkhalil1998/EC-601-Twitter_Project/blob/main/Images/word_cloud.png)
 
 
-### Project 3:
+## Project 3:
