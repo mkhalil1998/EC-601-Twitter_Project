@@ -1,6 +1,6 @@
-# EC-601-Twitter_Project
+# EC-601-Projects
 
-## Project 2:
+## Project 2: Twitter Project
 
 
 Phase 1 a: Exploring the twitter API
@@ -74,7 +74,7 @@ Word Cloud:
 ![alt text](https://github.com/mkhalil1998/EC-601-Twitter_Project/blob/main/Images/word_cloud.png)
 
 
-## Project 3:
+## Project 3: Unit Tests for Twitter Project
 
 **1 - (A) Google_NLP.py**
  
