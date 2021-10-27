@@ -14,7 +14,8 @@ Note: path to json google_api credentials should be set before running file
             sentiment is none and error for reason 
 '''
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]= "/Users/mac/Desktop/EC_601/Assignments/Project_2/credentials_google_api.json"
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]= ""
 client = language_v1.LanguageServiceClient()
 
 def analyze_sentiment(text):
