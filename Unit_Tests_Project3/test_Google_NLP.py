@@ -18,14 +18,14 @@ Output: Text and sentiment if assert function passes
 # Sample inputs:
 # --------------
 sample_text = 'I am okay'
-#sample_text = '%@*&#'
+sample_text2 = '%@*&#'
 #sample_text = '93849'
 #sample_text = 'I am very sad'
 #sample_text = 'I am very happy'
 
 # Function to print errors 
 def print_errors(errors):
-    print("The following are the errors: ")
+    print("Th errors are:")
     for statement in errors:
         print(statement)
     print('')
@@ -34,18 +34,25 @@ def print_errors(errors):
 def test_nlp():
 
     (sentimentDict,errors) = Google_NLP.analyze_sentiment(sample_text)
+    (sentimentDict2,errors2) = Google_NLP.analyze_sentiment(sample_text2)
 
     assert (len(sentimentDict) != 0)
-
-    if len(sentimentDict) == 0:
+    assert (len(sentimentDict2) != 0)
+    
+    if len(sentimentDict) == 0 or len(sentimentDict2)== 0:
         print_errors(errors)
+        print_errors(errors2)
         # Exiting system bcz of errors
         sys.exit(1)
 
-    print('Text: {}'.format(sample_text))
-    print('Sentiment: {}'.format(sentimentDict['score']))
+    print('Text1: {}'.format(sample_text))
+    print('Sentiment1: {}'.format(sentimentDict['score']))
+
+    print('Text2: {}'.format(sample_text2))
+    print('Sentiment2: {}'.format(sentimentDict2['score']))
 
     assert sentimentDict['score'] == pytest.approx(0.5,1)
+    assert sentimentDict2['score'] == pytest.approx(-0.3,1)
 
 if __name__ == '__main__':
     test_nlp()
