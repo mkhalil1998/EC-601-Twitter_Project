@@ -38,18 +38,18 @@ def authu():
 def search_tweets(api, q , num_of_tweets):
     errors = []
     try:
-        #posts =  api.search(q, lang='en', count = num_of_tweets)
         posts = tweepy.Cursor(api.search,
               q,
               lang="en", 
               tweet_mode = "extended").items(num_of_tweets)
+
     except tweepy.TweepError as error:
         errors.append(search_tweets.__name__ + ': ' + str(error))
 
     df = pd.DataFrame([tweet.full_text for tweet in posts], columns = ["tweets"])
 
     if len(df) != 0:
-        print('Results founds')
+        print('Tweets found')
     else:
         errors.append(search_tweets.__name__ + ': ' + 'No Results Found')
         print(errors)
@@ -59,6 +59,7 @@ def search_tweets(api, q , num_of_tweets):
 
 if __name__ == '__main__':
 
+    # Testing an example
     api = authu()
     (df, errors) = search_tweets(api = api, q='Airpods', num_of_tweets = 10)
     print('Errors:')
