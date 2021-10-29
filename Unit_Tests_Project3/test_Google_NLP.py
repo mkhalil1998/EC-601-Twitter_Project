@@ -12,47 +12,56 @@ and then run the test_Google_NLP.py file.
 
 Output: Text and sentiment if assert function passes 
         or 
-         Text and sentiment with error if it didnt pass 
+        Text and sentiment with error if it didnt pass 
 '''
 
 # Sample inputs:
 # --------------
 sample_text = 'I am okay'
 sample_text2 = '%@*&#'
-#sample_text = '93849'
-#sample_text = 'I am very sad'
-#sample_text = 'I am very happy'
 
 # Function to print errors 
 def print_errors(errors):
-    print("Th errors are:")
+    print("The errors are:")
     for statement in errors:
         print(statement)
     print('')
 
-# Function to test different inputs to nlp 
-def test_nlp():
+# Function to test positive sentiment different inputs to nlp 
+def test_positive_sentiment():
+    (sentimentDict,errors) = Google_NLP.analyze_sentiment("I am really happy today") 
+    assert(len(sentimentDict) != 0)
+    assert(round(sentimentDict['score']) == 1)
 
-    (sentimentDict,errors) = Google_NLP.analyze_sentiment(sample_text)
-    (sentimentDict2,errors2) = Google_NLP.analyze_sentiment(sample_text2)
-
-    assert (len(sentimentDict) != 0)
-    assert (len(sentimentDict2) != 0)
-    
-    if len(sentimentDict) == 0 or len(sentimentDict2)== 0:
+    if len(sentimentDict) == 0:
         print_errors(errors)
-        print_errors(errors2)
-        # Exiting system bcz of errors
-        sys.exit(1)
 
-    print('Text1: {}'.format(sample_text))
-    print('Sentiment1: {}'.format(sentimentDict['score']))
+    return
 
-    print('Text2: {}'.format(sample_text2))
-    print('Sentiment2: {}'.format(sentimentDict2['score']))
+# Function to test Negative sentiment different inputs to nlp 
+def test_negative_sentiment():
+    (sentimentDict,errors) = Google_NLP.analyze_sentiment("I am really sad today") 
+    assert(len(sentimentDict) != 0)
+    assert(round(sentimentDict['score']) == -1)
 
-    assert sentimentDict['score'] == pytest.approx(0.5,1)
-    assert sentimentDict2['score'] == pytest.approx(-0.3,1)
+    if len(sentimentDict) == 0:
+        print_errors(errors)
+
+    return
+
+# Function to test unusual input
+def test_unusual_sentiment():
+    (sentimentDict,errors) = Google_NLP.analyze_sentiment("$#^*@") 
+    assert(len(sentimentDict) != 0)
+    assert(round(sentimentDict['score']) == pytest.approx(-0.3,1))
+
+    if len(sentimentDict) == 0:
+        print_errors(errors)
+
+    return
+
 
 if __name__ == '__main__':
-    test_nlp()
+    test_positive_sentiment()
+    test_negative_sentiment()
+    test_unusual_sentiment()
