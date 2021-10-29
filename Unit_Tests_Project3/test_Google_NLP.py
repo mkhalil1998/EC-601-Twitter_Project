@@ -15,11 +15,6 @@ Output: Text and sentiment if assert function passes
         Text and sentiment with error if it didnt pass 
 '''
 
-# Sample inputs:
-# --------------
-sample_text = 'I am okay'
-sample_text2 = '%@*&#'
-
 # Function to print errors 
 def print_errors(errors):
     print("The errors are:")
