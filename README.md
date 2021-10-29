@@ -84,10 +84,40 @@ and provide sentiment score for given text.
 **1 - (B) test_Google_NLP.py**
 
 I export the google api code and write a 
-unit test to experiment with different inputs
+unit test to experiment with different inputs and test the output you would get
 
 To run this python file: 
 Type the sample text you want to text, change the assert function to the expected output 
 and then run the test_Google_NLP.py file. 
+
+**2 - (A) Twitter_API.py**
+
+Defines two functions:
+(1) authu, used to authenticate twitter api credentials
+input: credentials
+output: api 
+
+(2) search_tweets, used to return most recent tweets for a specific query 
+input: api, q(query), num_of_tweets
+output: tweets and errors 
+
+**2 - (B) Twitter_API.py**
+
+Role of this test is to determine if the api search outputs something for the 
+query. If it does then the assertion will hold and no errors will be printed. However, 
+if it does not output anything then the assertion will fail and errors will be printed. 
+
+This will allow us to test any input and see if an output or an error will be produced.
+
+Example of test:
+----------------
+Test case description: Input numbers as query to twitter api
+Test steps: Input a sequence of random numbers and record to see if the api is going 
+        retrieve tweets or return an error
+Test data: '94890'
+Expected result: Return tweets contain this random number
+Actual result: Returns tweets with random number
+
+
 
 
