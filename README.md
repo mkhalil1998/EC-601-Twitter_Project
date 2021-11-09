@@ -6,7 +6,7 @@
 Phase 1 a: Exploring the twitter API
 --------
 
-TwitterProject-Phase1.py allows the user to extract the most recent twitter posts for a particular user. 
+**TwitterProject-Phase1.py** allows the user to extract the most recent twitter posts for a particular user. 
 The code also cleans the data so that it is ready for the next step of NLP. 
 
 Testing: The code was tested with extracting the most recent twitter posts from Cristiano Ronaldo and they were compared to the tweets on twitter.
@@ -15,7 +15,7 @@ Testing: The code was tested with extracting the most recent twitter posts from 
 Phase 1 b: Exploring the Google NLP API 
 --------
 
-TwitterProject-Phase1b.py allows the user to use the extracted text from twitter that can be done using TwitterProject-Phase1.py and input it to the new function entiment_analysis_tweets. According to the generated sentiment score, the tweet is categorized into one of the sentiment levels. 
+**TwitterProject-Phase1b.py** allows the user to use the extracted text from twitter that can be done using TwitterProject-Phase1.py and input it to the new function entiment_analysis_tweets. According to the generated sentiment score, the tweet is categorized into one of the sentiment levels. 
  
  - 0.3 - 1 -> Positive 
  - 0.3 - -0.3 -> Neutral  
@@ -74,7 +74,7 @@ Word Cloud:
 ![alt text](https://github.com/mkhalil1998/EC-601-Twitter_Project/blob/main/Images/word_cloud.png)
 
 
-## Project 3: Unit Tests for Twitter Project
+# Project 3: Unit Tests for Twitter Project
 
 **1 - (A) Google_NLP.py**
 -------------------------
