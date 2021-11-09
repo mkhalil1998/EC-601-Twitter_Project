@@ -105,8 +105,8 @@ output: api
 input: api, q(query), num_of_tweets
 output: tweets and errors 
 
-**2 - (B) Twitter_API.py**
--------------------------
+**2 - (B) test_Twitter_API.py**
+----------------------------
  
 Role of this test is to determine if the api search outputs something for the 
 query. If it does then the assertion will hold and no errors will be printed. However, 
