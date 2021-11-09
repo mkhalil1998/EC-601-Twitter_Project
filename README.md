@@ -45,7 +45,7 @@ The goal of the project is to provide the user the flexibility of analyzing twee
 Below I provide a more detailed explanation of the three modules used in this project as well as example outputs for each using "airpods" as the test product:
 
 **1- twitter_api_module.py:**
-This modules has two primrary functions. It extracts the tweets related to the specified product and number of tweets. It also cleans/preprocesses the data to prepare it for sentiment analysis.
+This modules has two primary functions. It extracts the tweets related to the specified product and number of tweets. It also cleans/preprocesses the data to prepare it for sentiment analysis.
 
 Steps done to clean the tweets are as follows: 
  - Converting all letters to either upper case or lower case.
