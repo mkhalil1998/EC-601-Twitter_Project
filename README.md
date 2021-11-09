@@ -86,7 +86,7 @@ and provide sentiment score for given text.
 -------------------------
 
 I export the google api code and write a 
-unit test to experiment with different inputs and test the output you would get
+unit test to experiment with different inputs and test the output you would get.
 
 To run this python file: 
 Type the sample text you want to text, change the assert function to the expected output 
@@ -96,6 +96,7 @@ and then run the test_Google_NLP.py file.
 -------------------------
 
 Defines two functions:
+
 (1) authu, used to authenticate twitter api credentials
 input: credentials
 output: api 
