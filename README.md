@@ -1,6 +1,6 @@
 # EC-601-Projects
 
-## Project 2: Twitter Project
+# Project 2: Twitter Project
 
 
 Phase 1 a: Exploring the twitter API
