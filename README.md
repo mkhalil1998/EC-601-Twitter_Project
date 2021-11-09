@@ -3,7 +3,7 @@
 # Project 2: Twitter Project
 
 
-Phase 1 a: Exploring the twitter API
+Phase 1 a: Exploring the twitter API (Project_2_Phase1 File)
 --------
 
 **TwitterProject-Phase1.py** allows the user to extract the most recent twitter posts for a particular user. 
@@ -23,7 +23,7 @@ Phase 1 b: Exploring the Google NLP API
  
 Testing: The code was tested with extracting the 10 most recent twitter posts from the White House and each post was given a sentiment level. 
 
-Phase 2: Product Mission
+Phase 2: Product Mission (Modules File)
 --------
 
 ### User:
@@ -74,7 +74,7 @@ Word Cloud:
 ![alt text](https://github.com/mkhalil1998/EC-601-Twitter_Project/blob/main/Images/word_cloud.png)
 
 
-# Project 3: Unit Tests for Twitter Project
+# Project 3: Unit Tests for Twitter Project (Unit_Tests_Project3 File)
 
 **1 - (A) Google_NLP.py**
 -------------------------
